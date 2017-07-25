@@ -1,0 +1,25 @@
+{
+  "name": "exads-login",
+  "version": "1.0.0",
+  "description": "Jaume Regas",
+  "main": "",
+  "scripts": {
+    "build:sass": "node-sass client/src/scss/styles.scss client/dist/css/styles.css",
+    "build:sass:watch": "node-sass client/src/scss/styles.scss client/dist/css/styles.css --watch",
+    "prestart": "npm install",
+    "start": "http-server"
+  },
+  "dependencies": {
+    "angular": "^1.6.5",
+    "angular-animate": "^1.6.5",
+    "angular-aria": "^1.6.5",
+    "angular-material": "^1.1.4",
+    "curl": "^0.1.4",
+    "php": "0.0.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  },
+  "author": "jaumereg",
+  "license": "ISC"
+}

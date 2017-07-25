@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #f2f2f2;
+  font-family: 'Roboto', 'sans serif'; }
+
+.material-icons {
+  font-family: 'Material Icons'; }
+
+.login-page {
+  height: 100%;
+  display: flex; }
+  .login-page .login-container {
+    margin: auto;
+    background: white;
+    padding: 0 10px 50px 10px;
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0; }
+    .login-page .login-container .components {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto; }
+    .login-page .login-container .error-message {
+      visibility: hidden;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 3px;
+      box-shadow: 0px 4px 13px #bbb;
+      max-width: 500px;
+      padding: 10px;
+      margin: 20px 5px;
+      width: 100%;
+      background: #eb5757;
+      color: #fff; }
+      .login-page .login-container .error-message p {
+        margin: 3px 5px 0 10px;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        font-weight: 300; }
+      .login-page .login-container .error-message .material-icons:hover {
+        cursor: pointer; }
+    .login-page .login-container img.logo {
+      max-width: 220px;
+      width: 100%;
+      height: auto; }
+    .login-page .login-container img + p {
+      text-align: center;
+      letter-spacing: 0.02em;
+      font-weight: 300;
+      color: #979797; }
+    .login-page .login-container form {
+      max-width: 500px;
+      width: 100%; }
+    .login-page .login-container ._md {
+      width: 100%;
+      overflow: hidden;
+      background: none; }
+      .login-page .login-container ._md .username-field {
+        margin-bottom: 5px; }
+      .login-page .login-container ._md .password-field {
+        height: 67px; }
+        .login-page .login-container ._md .password-field button {
+          color: #b3b3b3;
+          border: none;
+          background: none;
+          position: relative;
+          float: right;
+          padding: 0;
+          height: 24px;
+          bottom: 27px; }
+          .login-page .login-container ._md .password-field button:hover {
+            color: #333; }
+      .login-page .login-container ._md md-input-container {
+        width: 100%; }
+        .login-page .login-container ._md md-input-container .md-errors-spacer {
+          min-height: 0;
+          min-width: 0; }
+        .login-page .login-container ._md md-input-container .md-input:focus {
+          border-color: #979797; }
+      .login-page .login-container ._md .md-input-focused label {
+        color: #979797; }
+    .login-page .login-container .help-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 5px; }
+      .login-page .login-container .help-container .remember-me {
+        display: flex; }
+        .login-page .login-container .help-container .remember-me md-switch.md-checked .md-bar {
+          background-color: #4cb050; }
+        .login-page .login-container .help-container .remember-me md-switch.md-checked .md-thumb {
+          background-color: #fafafa; }
+        .login-page .login-container .help-container .remember-me md-switch {
+          margin-top: 0; }
+        .login-page .login-container .help-container .remember-me p {
+          color: #4d4d4d; }
+      .login-page .login-container .help-container p {
+        font-size: 13px;
+        margin-top: 0;
+        padding-top: 7px; }
+    .login-page .login-container .sign-up p {
+      color: #848484;
+      font-size: 14px; }
+    .login-page .login-container a {
+      color: #0c77bd;
+      text-decoration: none; }
+    .login-page .login-container a:hover {
+      text-decoration: underline; }
+    .login-page .login-container .md-button.md-primary.md-raised {
+      background-color: #4cb050;
+      display: block;
+      width: 120px;
+      margin: 22px auto; }
+      .login-page .login-container .md-button.md-primary.md-raised:hover {
+        background-color: #1a872a; }
+    .login-page .login-container .md-button.md-raised[disabled] {
+      background-color: #ccc;
+      color: #fff; }
+      .login-page .login-container .md-button.md-raised[disabled]:hover {
+        background-color: #ccc; }

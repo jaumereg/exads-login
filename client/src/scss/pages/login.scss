@@ -1,0 +1,149 @@
+.login-page {
+    height: 100%;
+    display: flex;
+    .login-container {
+        margin: auto;
+        background: white;
+        padding: 0 10px 50px 10px;
+        width: 100%;
+        border-top: 1px solid #e0e0e0;
+        border-bottom: 1px solid #e0e0e0;
+        .components {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .error-message {
+            visibility: hidden;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 3px;
+            box-shadow: 0px 4px 13px #bbb;
+            max-width: 500px;
+            padding: 10px;
+            margin: 20px 5px;
+            width: 100%;
+            background: #eb5757;
+            color: #fff;
+            p {
+                margin: 3px 5px 0 10px;
+                font-size: 14px;
+                letter-spacing: 0.02em;
+                font-weight: 300;
+            }
+            .material-icons:hover {
+                cursor: pointer;
+            }
+        }
+        img.logo {
+            max-width: 220px;
+            width: 100%;
+            height: auto;
+        }
+        img+p {
+            text-align: center;
+            letter-spacing: 0.02em;
+            font-weight: 300;
+            color: #979797;
+        }
+        form {
+            max-width: 500px;
+            width: 100%;
+        }
+        ._md {
+            width: 100%;
+            overflow: hidden;
+            background: none;
+            .username-field {
+                margin-bottom: 5px;
+            }
+            .password-field {
+                height: 67px;
+                button {
+                    color: #b3b3b3;
+                    border: none;
+                    background: none;
+                    position: relative;
+                    float: right;
+                    padding: 0;
+                    height: 24px;
+                    bottom: 27px;
+                    &:hover {
+                        color: #333;
+                    }
+                }
+            }
+            md-input-container {
+                width: 100%;
+                .md-errors-spacer {
+                    min-height: 0;
+                    min-width: 0;
+                }
+                .md-input:focus {
+                    border-color: #979797;
+                }
+            }
+            .md-input-focused label {
+                color: #979797;
+            }
+        }
+        .help-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 5px;
+            .remember-me {
+                display: flex;
+                md-switch.md-checked {
+                    .md-bar {
+                        background-color: $green-color;
+                    }
+                    .md-thumb {
+                        background-color: rgb(250, 250, 250);
+                    }
+                }
+                md-switch {
+                    margin-top: 0;
+                }
+                p {
+                    color: #4d4d4d;
+                }
+            }
+            p {
+                font-size: 13px;
+                margin-top: 0;
+                padding-top: 7px;
+            }
+        }
+        .sign-up {
+            p {
+                color: #848484;
+                font-size: 14px;
+            }
+        }
+        a {
+            color: #0c77bd;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .md-button.md-primary.md-raised {
+            background-color: $green-color;
+            display: block;
+            width: 120px;
+            margin: 22px auto;
+            &:hover {
+                background-color: #1a872a;
+            }
+        }
+        .md-button.md-raised[disabled] {
+            background-color: #ccc;
+            color: #fff;
+            &:hover {
+                background-color: #ccc;
+            }
+        }
+    }
+}
